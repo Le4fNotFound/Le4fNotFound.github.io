@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -24,7 +24,7 @@
 <meta property="og:title" content="Le4f&#39;s Wiki">
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="Le4f&#39;s Wiki">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="Le4f">
 <meta name="twitter:card" content="summary">
 
@@ -37,7 +37,7 @@
     sidebar: "",
     isHome : true,
     isPost : false,
-    lang   : 'en'
+    lang   : 'zh-CN'
   };
 </script>
 
@@ -81,7 +81,7 @@
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
+    <div class="toggle" aria-label="切换导航栏">
       <span class="toggle-line toggle-line-first"></span>
       <span class="toggle-line toggle-line-middle"></span>
       <span class="toggle-line toggle-line-last"></span>
@@ -110,27 +110,27 @@
   <ul id="menu" class="main-menu menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
 
   </li>
         <li class="menu-item menu-item-about">
 
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
 
   </li>
         <li class="menu-item menu-item-schedule">
 
-    <a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>Schedule</a>
+    <a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>日程表</a>
 
   </li>
   </ul>
@@ -159,7 +159,7 @@
       
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/15/The-Web-in-Depth/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -182,23 +182,23 @@
               <span class="post-meta-item-icon">
                 <i class="far fa-calendar"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
+              <span class="post-meta-item-text">发表于</span>
 
-              <time title="Created: 2024-11-15 14:42:13" itemprop="dateCreated datePublished" datetime="2024-11-15T14:42:13+08:00">2024-11-15</time>
+              <time title="创建时间：2024-11-15 14:42:13" itemprop="dateCreated datePublished" datetime="2024-11-15T14:42:13+08:00">2024-11-15</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
+              <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Web/" itemprop="url" rel="index"><span itemprop="name">Web</span></a>
                 </span>
-                  , 
+                  ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Web/Security/" itemprop="url" rel="index"><span itemprop="name">Security</span></a>
                 </span>
-                  , 
+                  ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Web/Security/Hacker-101/" itemprop="url" rel="index"><span itemprop="name">Hacker 101</span></a>
                 </span>
@@ -224,7 +224,22 @@
 <li>Same-Origin Policy</li>
 <li>CSRF (Cross-Site Request Forgery)</li>
 </ul>
-<h1 id="HTTP-basics"><a href="#HTTP-basics" class="headerlink" title="HTTP basics"></a>HTTP basics</h1>
+<h1 id="HTTP-basics"><a href="#HTTP-basics" class="headerlink" title="HTTP basics"></a>HTTP basics</h1><h2 id="Requests"><a href="#Requests" class="headerlink" title="Requests"></a>Requests</h2><p>This is the the basic format of HTTP requests.</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs sh">VERB /resourse/locator HTTP/1.1<br>HEAD1: Value1<br>HEAD2: Value2<br>......<br><br>&lt;Body of Requests&gt;<br></code></pre></td></tr></table></figure>
+<ul>
+<li>VERB: GET, PUT, DELETE, POST</li>
+<li>Number of different <strong>Headers</strong>, like “Host”, “User-Angent”</li>
+<li>Request body</li>
+</ul>
+<p>Headers are seperated from the body by 2 CRLF sequences (means the key “Enter”).</p>
+<h2 id="Request-Headers"><a href="#Request-Headers" class="headerlink" title="Request Headers"></a>Request Headers</h2><ul>
+<li>Host: Indicates the desired host handling the request</li>
+<li>Accept: indicates what MIME type(s) are accepted by the client; often used to specify JSON or XML output for web-services</li>
+<li>Cookie: Passes cookie data to the server</li>
+<li>Referer: Page leading to this request (<code>note:</code> this is not passed to other servers when using HTTPS on the origin)</li>
+<li>Authorization: Used for ‘basic auth’ pages(mainly). Takes the form “Basic &lt;base64’d username:password&gt;”</li>
+</ul>
+
       
     </div>
 
@@ -283,10 +298,10 @@
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
-          Table of Contents
+          文章目录
         </li>
         <li class="sidebar-nav-overview">
-          Overview
+          站点概览
         </li>
       </ul>
 
@@ -308,14 +323,14 @@
           <a href="/archives/">
         
           <span class="site-state-item-count">1</span>
-          <span class="site-state-item-name">posts</span>
+          <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
         <span class="site-state-item-count">3</span>
-        <span class="site-state-item-name">categories</span></a>
+        <span class="site-state-item-name">分类</span></a>
       </div>
   </nav>
 </div>
