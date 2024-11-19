@@ -20,28 +20,32 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"right","Muse | Mist":220,"display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Le4f&#39;s Wiki">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="各种协议备忘">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Internet Protocol">
+<meta property="og:url" content="http://example.com/2024/11/19/Internet-Protocol/index.html">
 <meta property="og:site_name" content="Le4f&#39;s Wiki">
+<meta property="og:description" content="各种协议备忘">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-11-19T14:01:05.000Z">
+<meta property="article:modified_time" content="2024-11-19T14:02:03.714Z">
 <meta property="article:author" content="Le4f">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2024/11/19/Internet-Protocol/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>Le4f's Wiki</title>
+  <title>Internet Protocol | Le4f's Wiki</title>
   
 
 
@@ -154,9 +158,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
@@ -172,10 +177,9 @@
       <meta itemprop="name" content="Le4f's Wiki">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/11/19/Internet-Protocol/" class="post-title-link" itemprop="url">Internet Protocol</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Internet Protocol
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -207,193 +211,42 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>各种协议备忘</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/11/19/Internet-Protocol/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
+        <p>各种协议备忘</p>
+<span id="more"></span>
+
+<h4 id="动态主机配置协议（DHCP，Dynamic-Host-Configuration-Protocol）"><a href="#动态主机配置协议（DHCP，Dynamic-Host-Configuration-Protocol）" class="headerlink" title="动态主机配置协议（DHCP，Dynamic Host Configuration Protocol）"></a>动态主机配置协议（DHCP，Dynamic Host Configuration Protocol）</h4><p>计算机通信时，DHCP给计算机分配一个IP地址，并通过协议告知用户其IP。用户计算机通过UDP使用该协议和DHCP Server通信，该服务器跟踪网络中的计算机及其IP地址。</p>
+<h4 id="域名系统协议-DNS，Domain-Name-System-Protocol"><a href="#域名系统协议-DNS，Domain-Name-System-Protocol" class="headerlink" title="域名系统协议(DNS，Domain Name System Protocol)"></a>域名系统协议(DNS，Domain Name System Protocol)</h4><p>当用户在网络浏览器中访问一个网站时，例如meta.com，计算机需要一种方法来知道与哪个IP地址进行通信。用户计算机通过域名相关的DNS服务器进行检查，然后返回正确的IP地址。</p>
+<h4 id="互联网信息访问协议-IMAP，Internet-Message-Access-Protocol"><a href="#互联网信息访问协议-IMAP，Internet-Message-Access-Protocol" class="headerlink" title="互联网信息访问协议(IMAP，Internet Message Access Protocol)"></a>互联网信息访问协议(IMAP，Internet Message Access Protocol)</h4><p>用户设备通过IMAP来下载电子邮件，并在存储的电子邮件的服务器上管理自己的邮箱。</p>
+<h4 id="简单邮件传输协议（SMTP，Simple-Mail-Transfer-Protocol）"><a href="#简单邮件传输协议（SMTP，Simple-Mail-Transfer-Protocol）" class="headerlink" title="简单邮件传输协议（SMTP，Simple Mail Transfer Protocol）"></a>简单邮件传输协议（SMTP，Simple Mail Transfer Protocol）</h4><p>现在电子邮件已经在设备上，需要一种方法来发送电子邮件。使用SMTP。它允许电子邮件客户端通过SMTP服务器提交电子邮件进行发送。也可以用它来接收来自电子邮件客户端的电子邮件，但更常用IMAP。</p>
+<h4 id="邮政协议-POP，Post-Office-Protocol"><a href="#邮政协议-POP，Post-Office-Protocol" class="headerlink" title="邮政协议(POP，Post Office Protocol)"></a>邮政协议(POP，Post Office Protocol)</h4><p>邮政协议（POP）是一个较早的协议，用于下载电子邮件到电子邮件客户端。POP和IMAP的主要区别是，POP会在邮件下载到本地设备后删除服务器上的邮件。虽然它不再普遍用于电子邮件客户端，但开发人员经常使用它来实现电子邮件自动化，因为它是一个比IMAP更直接的协议。</p>
+<h4 id="文件传输协议（FTP，File-Transfer-Protocol）"><a href="#文件传输协议（FTP，File-Transfer-Protocol）" class="headerlink" title="文件传输协议（FTP，File Transfer Protocol）"></a>文件传输协议（FTP，File Transfer Protocol）</h4><p>当在互联网上运行你的网站和网络应用程序时，需要一种方法将文件从你的本地计算机传输到它们要运行的服务器上，通常使用标准协议是FTP。FTP允许用户在服务器上列出、发送、接收和删除文件。服务器必须运行一个FTP服务器，本地机器需要运行一个FTP客户端。</p>
+<h4 id="SSH协议（SSH，Secure-Shell-Protocol）"><a href="#SSH协议（SSH，Secure-Shell-Protocol）" class="headerlink" title="SSH协议（SSH，Secure Shell Protocol）"></a>SSH协议（SSH，Secure Shell Protocol）</h4><p>当你开始使用服务器时，你还需要一种方法来登录并与计算机进行远程交互。最常见的方法是使用SSH协议。使用SSH客户端允许你连接到服务器上运行的SSH服务器，在远程计算机上执行命令。所有通过SSH发送的数据都是加密的。</p>
+<h4 id="SSH文件传输协议（SFTP，SSH-File-Transfer-Protocol）"><a href="#SSH文件传输协议（SFTP，SSH-File-Transfer-Protocol）" class="headerlink" title="SSH文件传输协议（SFTP，SSH File Transfer Protocol）"></a>SSH文件传输协议（SFTP，SSH File Transfer Protocol）</h4><p>使用文件传输协议时，数据的传输是不安全的，有可能被第三方截获。为了解决这个问题，可以使用SSH文件传输协议，这可以确保数据安全传输。大多数FTP客户端也支持SFTP协议。</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
         
-      
-    </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/17/Database-Basic/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/19544795?s=400&u=9ee5080d4cb44baabaf5b4af09769c17e14b1fcc&v=4">
-      <meta itemprop="name" content="Le4f">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Le4f's Wiki">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/11/17/Database-Basic/" class="post-title-link" itemprop="url">Database Basic</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-11-17 11:38:59" itemprop="dateCreated datePublished" datetime="2024-11-17T11:38:59+08:00">2024-11-17</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="Part-I-What-is-a-database"><a href="#Part-I-What-is-a-database" class="headerlink" title="Part I - What is a database?"></a>Part I - What is a database?</h1><h2 id="Data-Database"><a href="#Data-Database" class="headerlink" title="Data &amp; Database"></a>Data &amp; Database</h2><p><code>Data</code> is information or pieces of information that can be processed by a computer. </p>
-<p>A <code>database</code> is an organized collection of data, stored and accessed electronically. </p>
-<h2 id="Use-of-Database"><a href="#Use-of-Database" class="headerlink" title="Use of Database"></a>Use of Database</h2><p>Databases are used to store and manage large amounts of <code>structured and unstructured data</code>(结构化数据和非结构化数据), and they can be used to support a wide range of activities, including data storage, data analysis, and data management. </p>
-<h2 id="Structured-Query-Language-SQL"><a href="#Structured-Query-Language-SQL" class="headerlink" title="Structured Query Language (SQL)"></a>Structured Query Language (SQL)</h2><p><strong>Structured Query Language (SQL)</strong> is a programming language designed for managing and manipulating data stored in <code>relational database management systems (RDBMS)</code>. </p>
-<ul>
-<li>create, modify, and delete database objects such as tables, indices, and users</li>
-<li>manipulate data in the database by inserting, updating, and deleting records;</li>
-<li>query the database to retrieve specific data or generate reports.</li>
-</ul>
-<p>It is widely used in the development of web-based applications, and it is supported by most RDBMSs, including MySQL, Oracle, and Microsoft SQL Server.</p>
-<h2 id="Types-of-Databases"><a href="#Types-of-Databases" class="headerlink" title="Types of Databases"></a>Types of Databases</h2><p>There are several different types of databases, including:</p>
-<p><strong>Relational databases</strong>: These databases store data in the form of tables, with rows representing records and columns representing fields. Relationships between data can be established using keys. </p>
-<p><strong>Object-oriented databases</strong>: These databases store data in the form of objects, which are self-contained units of data and functionality. Object-oriented databases are designed to support the storage and management of complex, interrelated data.  </p>
-<p><strong>NoSQL databases</strong>: These databases are designed to support the storage and management of large amounts of unstructured data. They do not use the traditional table-based structure of relational databases, and they often support horizontal scaling, which allows them to handle very large amounts of data and high levels of concurrency.</p>
-<h2 id="Database-Architecture"><a href="#Database-Architecture" class="headerlink" title="Database Architecture"></a>Database Architecture</h2><p>There are several different types of database architectures, including:<br>Centralized (集中式) database architecture <br>Distributed database architecture <br>Client-server database architecture <br>Cloud database architecture</p>
-<h2 id="Advantage-v-s-Disadvantage"><a href="#Advantage-v-s-Disadvantage" class="headerlink" title="Advantage v.s. Disadvantage"></a>Advantage v.s. Disadvantage</h2><h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p><a target="_blank" rel="noopener" href="https://www.simplilearn.com/tutorials/dbms-tutorial/what-is-a-database#:~:text=There%20are%20several%20advantages%20to,tracking%20changes%20to%20the%20data.">What is a Database? Everything You Need to Know</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/15/The-Web-in-Depth/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/19544795?s=400&u=9ee5080d4cb44baabaf5b4af09769c17e14b1fcc&v=4">
-      <meta itemprop="name" content="Le4f">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Le4f's Wiki">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/11/15/The-Web-in-Depth/" class="post-title-link" itemprop="url">The Web in Depth</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-11-15 14:42:13" itemprop="dateCreated datePublished" datetime="2024-11-15T14:42:13+08:00">2024-11-15</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Web/" itemprop="url" rel="index"><span itemprop="name">Web</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Web/Security/" itemprop="url" rel="index"><span itemprop="name">Security</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Web/Security/Hacker-101/" itemprop="url" rel="index"><span itemprop="name">Hacker 101</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="Content-List"><a href="#Content-List" class="headerlink" title="Content List"></a>Content List</h1><ul>
-<li>HTTP basics</li>
-<li>Cookie security</li>
-<li>HTML parsing</li>
-<li>MIME sniffing</li>
-<li>Encoding sniffing</li>
-<li>Same-Origin Policy</li>
-<li>CSRF (Cross-Site Request Forgery)</li>
-</ul>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/11/15/The-Web-in-Depth/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2024/11/17/Database-Basic/" rel="prev" title="Database Basic">
+      <i class="fa fa-chevron-left"></i> Database Basic
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
@@ -446,6 +299,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8A%A8%E6%80%81%E4%B8%BB%E6%9C%BA%E9%85%8D%E7%BD%AE%E5%8D%8F%E8%AE%AE%EF%BC%88DHCP%EF%BC%8CDynamic-Host-Configuration-Protocol%EF%BC%89"><span class="nav-number">1.</span> <span class="nav-text">动态主机配置协议（DHCP，Dynamic Host Configuration Protocol）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9F%9F%E5%90%8D%E7%B3%BB%E7%BB%9F%E5%8D%8F%E8%AE%AE-DNS%EF%BC%8CDomain-Name-System-Protocol"><span class="nav-number">2.</span> <span class="nav-text">域名系统协议(DNS，Domain Name System Protocol)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BA%92%E8%81%94%E7%BD%91%E4%BF%A1%E6%81%AF%E8%AE%BF%E9%97%AE%E5%8D%8F%E8%AE%AE-IMAP%EF%BC%8CInternet-Message-Access-Protocol"><span class="nav-number">3.</span> <span class="nav-text">互联网信息访问协议(IMAP，Internet Message Access Protocol)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AE%80%E5%8D%95%E9%82%AE%E4%BB%B6%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE%EF%BC%88SMTP%EF%BC%8CSimple-Mail-Transfer-Protocol%EF%BC%89"><span class="nav-number">4.</span> <span class="nav-text">简单邮件传输协议（SMTP，Simple Mail Transfer Protocol）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%82%AE%E6%94%BF%E5%8D%8F%E8%AE%AE-POP%EF%BC%8CPost-Office-Protocol"><span class="nav-number">5.</span> <span class="nav-text">邮政协议(POP，Post Office Protocol)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE%EF%BC%88FTP%EF%BC%8CFile-Transfer-Protocol%EF%BC%89"><span class="nav-number">6.</span> <span class="nav-text">文件传输协议（FTP，File Transfer Protocol）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#SSH%E5%8D%8F%E8%AE%AE%EF%BC%88SSH%EF%BC%8CSecure-Shell-Protocol%EF%BC%89"><span class="nav-number">7.</span> <span class="nav-text">SSH协议（SSH，Secure Shell Protocol）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#SSH%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE%EF%BC%88SFTP%EF%BC%8CSSH-File-Transfer-Protocol%EF%BC%89"><span class="nav-number">8.</span> <span class="nav-text">SSH文件传输协议（SFTP，SSH File Transfer Protocol）</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
