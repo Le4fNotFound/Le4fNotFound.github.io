@@ -160,6 +160,755 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/19/OS-Virtual-Memory/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/19544795?s=400&u=9ee5080d4cb44baabaf5b4af09769c17e14b1fcc&v=4">
+      <meta itemprop="name" content="Le4f">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Le4f's Wiki">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/11/19/OS-Virtual-Memory/" class="post-title-link" itemprop="url">OS: Virtual Memory</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-11-19 22:33:38" itemprop="dateCreated datePublished" datetime="2024-11-19T22:33:38+08:00">2024-11-19</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/OS/" itemprop="url" rel="index"><span itemprop="name">OS</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/OS/CS-Basic/" itemprop="url" rel="index"><span itemprop="name">CS Basic</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/OS/CS-Basic/THU/" itemprop="url" rel="index"><span itemprop="name">THU</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>OS复习过程中，关于虚拟存储部分的简单笔记，描述未必准确，只是帮助自己理解。</p>
+<h3 id="覆盖和交换"><a href="#覆盖和交换" class="headerlink" title="覆盖和交换"></a>覆盖和交换</h3><h4 id="覆盖"><a href="#覆盖" class="headerlink" title="覆盖"></a>覆盖</h4><p>将程序分成若干个功能相对独立的模块，将没有调用关系的模块分成一组放入同一个共享内存区域。</p>
+<ol>
+<li>必要部分：主要功能常驻内存</li>
+<li>可选部分：不常用功能，需要时装入内存</li>
+<li>没有调用关系的模块必要时可以相互覆盖</li>
+<li>缺点：<ul>
+<li>增加运行时间</li>
+<li>增加编程难度</li>
+</ul>
+</li>
+</ol>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2024/11/19/OS-Virtual-Memory/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/19/OS-Page-Replacement-Algorithm/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/19544795?s=400&u=9ee5080d4cb44baabaf5b4af09769c17e14b1fcc&v=4">
+      <meta itemprop="name" content="Le4f">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Le4f's Wiki">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/11/19/OS-Page-Replacement-Algorithm/" class="post-title-link" itemprop="url">OS: Page Replacement Algorithm</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-11-19 22:31:58" itemprop="dateCreated datePublished" datetime="2024-11-19T22:31:58+08:00">2024-11-19</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/OS/" itemprop="url" rel="index"><span itemprop="name">OS</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/OS/CS-Basic/" itemprop="url" rel="index"><span itemprop="name">CS Basic</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/OS/CS-Basic/THU/" itemprop="url" rel="index"><span itemprop="name">THU</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>OS页面置换算法简记，不系统</p>
+<h3 id="置换算法的概念"><a href="#置换算法的概念" class="headerlink" title="置换算法的概念"></a>置换算法的概念</h3><ul>
+<li>功能：选择被置换的物理页面</li>
+<li>目标：尽可能减少调入调出次数</li>
+<li><code>页面锁定</code>：某些页面不可被换出（OS相关、要求响应速度等）<ul>
+<li>依靠页表中锁定标志位解决</li>
+</ul>
+</li>
+</ul>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2024/11/19/OS-Page-Replacement-Algorithm/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/19/OS-I-O-System/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/19544795?s=400&u=9ee5080d4cb44baabaf5b4af09769c17e14b1fcc&v=4">
+      <meta itemprop="name" content="Le4f">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Le4f's Wiki">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/11/19/OS-I-O-System/" class="post-title-link" itemprop="url">OS: I/O System</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-11-19 22:30:15" itemprop="dateCreated datePublished" datetime="2024-11-19T22:30:15+08:00">2024-11-19</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/OS/" itemprop="url" rel="index"><span itemprop="name">OS</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/OS/CS-Basic/" itemprop="url" rel="index"><span itemprop="name">CS Basic</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/OS/CS-Basic/THU/" itemprop="url" rel="index"><span itemprop="name">THU</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>这个系列的文章都是学习清华《操作系统》（向勇、陈渝老师）的时候自己做的课程笔记。<br>视频来源：学堂在线<br>本章笔记主要是I&#x2F;O系统相关知识，更为详细的内容推荐阅读课本</p>
+<h3 id="I-O特点"><a href="#I-O特点" class="headerlink" title="I&#x2F;O特点"></a>I&#x2F;O特点</h3><h4 id="设备接口类型及特征"><a href="#设备接口类型及特征" class="headerlink" title="设备接口类型及特征"></a>设备接口类型及特征</h4><ul>
+<li>字符设备 <ul>
+<li>存取速度慢，如：键盘鼠标串口</li>
+<li>特征：以字节为单位顺序访问</li>
+<li>I&#x2F;O命令：get(),put()</li>
+</ul>
+</li>
+</ul>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2024/11/19/OS-I-O-System/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/19/OS-File-System/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/19544795?s=400&u=9ee5080d4cb44baabaf5b4af09769c17e14b1fcc&v=4">
+      <meta itemprop="name" content="Le4f">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Le4f's Wiki">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/11/19/OS-File-System/" class="post-title-link" itemprop="url">OS: File System</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-11-19 22:27:40" itemprop="dateCreated datePublished" datetime="2024-11-19T22:27:40+08:00">2024-11-19</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/OS/" itemprop="url" rel="index"><span itemprop="name">OS</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/OS/CS-Basic/" itemprop="url" rel="index"><span itemprop="name">CS Basic</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/OS/CS-Basic/THU/" itemprop="url" rel="index"><span itemprop="name">THU</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>这个系列的文章都是学习清华《操作系统》（向勇、陈渝老师）的时候自己做的课程笔记。<br>视频来源：学堂在线<br>本章笔记主要是文章系统相关知识，这一章概念比较多一些，宜多看几遍尝试理解</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2024/11/19/OS-File-System/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/19/Compiler-AST/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/19544795?s=400&u=9ee5080d4cb44baabaf5b4af09769c17e14b1fcc&v=4">
+      <meta itemprop="name" content="Le4f">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Le4f's Wiki">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/11/19/Compiler-AST/" class="post-title-link" itemprop="url">Compiler: AST</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-11-19 22:25:25" itemprop="dateCreated datePublished" datetime="2024-11-19T22:25:25+08:00">2024-11-19</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Compiler/" itemprop="url" rel="index"><span itemprop="name">Compiler</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="From-concrete-to-abstract"><a href="#From-concrete-to-abstract" class="headerlink" title="From concrete to abstract"></a>From concrete to abstract</h3><p><code>抽象语法树（AST）本质是是精简的解析树。</code>解析树的核心是一个句子语法结构的图示。编译器设计中<em>“AST”</em>和<strong>语法树</strong>是可以等价的”</p>
+<blockquote>
+<p>语法解析树是一个句子的图解结构，任何一种语言都可以来实现这个句子，这意味着他可以遵循任何语法规则。</p>
+</blockquote>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2024/11/19/Compiler-AST/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/19/Compiler-Recursive-Descent-Parsing/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/19544795?s=400&u=9ee5080d4cb44baabaf5b4af09769c17e14b1fcc&v=4">
+      <meta itemprop="name" content="Le4f">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Le4f's Wiki">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/11/19/Compiler-Recursive-Descent-Parsing/" class="post-title-link" itemprop="url">Compiler: Recursive Descent Parsing</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-11-19 22:11:54" itemprop="dateCreated datePublished" datetime="2024-11-19T22:11:54+08:00">2024-11-19</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Compiler/" itemprop="url" rel="index"><span itemprop="name">Compiler</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="自顶向下的语法分析"><a href="#自顶向下的语法分析" class="headerlink" title="自顶向下的语法分析"></a>自顶向下的语法分析</h3><p>根据生成树的不同，语法分析分为自顶向下和自底向上两种方式。</p>
+<h4 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h4><p>自顶向下的语法分析：从文法开始符号出发，自上而下的为输入串建立一棵语法树，使语法树的末端结点与给定符号串相匹配。如果最终没有相匹配的语法树，则说明给顶符号串不符合语法规则。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2024/11/19/Compiler-Recursive-Descent-Parsing/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/19/Compiler-Lexical-Analysis/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/19544795?s=400&u=9ee5080d4cb44baabaf5b4af09769c17e14b1fcc&v=4">
+      <meta itemprop="name" content="Le4f">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Le4f's Wiki">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/11/19/Compiler-Lexical-Analysis/" class="post-title-link" itemprop="url">Compiler: Lexical Analysis</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-11-19 22:09:47" itemprop="dateCreated datePublished" datetime="2024-11-19T22:09:47+08:00">2024-11-19</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Compiler/" itemprop="url" rel="index"><span itemprop="name">Compiler</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>词法分析器 - 从输入串提取带个独立的基本语法符号（token）<br>主要提取的token有五种：</p>
+<ul>
+<li>关键词 - 保留字</li>
+<li>标识符 - 变量名、常量名、数组名、子过程名等</li>
+<li>常数</li>
+<li>运算符</li>
+<li>界符 - 逗号、分号、括号等</li>
+</ul>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2024/11/19/Compiler-Lexical-Analysis/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/19/Compiler-Base-of-Compiling/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/19544795?s=400&u=9ee5080d4cb44baabaf5b4af09769c17e14b1fcc&v=4">
+      <meta itemprop="name" content="Le4f">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Le4f's Wiki">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/11/19/Compiler-Base-of-Compiling/" class="post-title-link" itemprop="url">Compiler: Base of Compiling</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-11-19 22:08:49" itemprop="dateCreated datePublished" datetime="2024-11-19T22:08:49+08:00">2024-11-19</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Compiler/" itemprop="url" rel="index"><span itemprop="name">Compiler</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="文法与语言"><a href="#文法与语言" class="headerlink" title="文法与语言"></a>文法与语言</h3><p>语言是在基本符号集上按照一定规则构成的符号串的集合</p>
+<ul>
+<li>字母表：非空有穷集合</li>
+<li>符号串：字母表中符号构成的有穷序列</li>
+<li>符号串的长度：串中符号的个数</li>
+<li>空串</li>
+<li>连接：就是简单拼接</li>
+<li>方幂：符号串a自身连接n次得到的新符号串<br><code>非空串和空串的连接，就是非空串本身</code></li>
+<li>符号串集合的乘积</li>
+</ul>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2024/11/19/Compiler-Base-of-Compiling/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/19/Data-Link-Layer/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/19544795?s=400&u=9ee5080d4cb44baabaf5b4af09769c17e14b1fcc&v=4">
+      <meta itemprop="name" content="Le4f">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Le4f's Wiki">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/11/19/Data-Link-Layer/" class="post-title-link" itemprop="url">Data Link Layer</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-11-19 22:03:53" itemprop="dateCreated datePublished" datetime="2024-11-19T22:03:53+08:00">2024-11-19</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Network/" itemprop="url" rel="index"><span itemprop="name">Network</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Network/CS-Basic/" itemprop="url" rel="index"><span itemprop="name">CS Basic</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>介质访问控制相关，随手笔记，方便我自己找ovo，</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2024/11/19/Data-Link-Layer/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/19/Internet-Protocol/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -193,6 +942,10 @@
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Network/" itemprop="url" rel="index"><span itemprop="name">Network</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Network/CS-Basic/" itemprop="url" rel="index"><span itemprop="name">CS Basic</span></a>
                 </span>
             </span>
 
@@ -230,171 +983,11 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/17/Database-Basic/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/19544795?s=400&u=9ee5080d4cb44baabaf5b4af09769c17e14b1fcc&v=4">
-      <meta itemprop="name" content="Le4f">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Le4f's Wiki">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/11/17/Database-Basic/" class="post-title-link" itemprop="url">Database Basic</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-11-17 11:38:59" itemprop="dateCreated datePublished" datetime="2024-11-17T11:38:59+08:00">2024-11-17</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="Part-I-What-is-a-database"><a href="#Part-I-What-is-a-database" class="headerlink" title="Part I - What is a database?"></a>Part I - What is a database?</h1><h2 id="Data-Database"><a href="#Data-Database" class="headerlink" title="Data &amp; Database"></a>Data &amp; Database</h2><p><code>Data</code> is information or pieces of information that can be processed by a computer. </p>
-<p>A <code>database</code> is an organized collection of data, stored and accessed electronically. </p>
-<h2 id="Use-of-Database"><a href="#Use-of-Database" class="headerlink" title="Use of Database"></a>Use of Database</h2><p>Databases are used to store and manage large amounts of <code>structured and unstructured data</code>(结构化数据和非结构化数据), and they can be used to support a wide range of activities, including data storage, data analysis, and data management. </p>
-<h2 id="Structured-Query-Language-SQL"><a href="#Structured-Query-Language-SQL" class="headerlink" title="Structured Query Language (SQL)"></a>Structured Query Language (SQL)</h2><p><strong>Structured Query Language (SQL)</strong> is a programming language designed for managing and manipulating data stored in <code>relational database management systems (RDBMS)</code>. </p>
-<ul>
-<li>create, modify, and delete database objects such as tables, indices, and users</li>
-<li>manipulate data in the database by inserting, updating, and deleting records;</li>
-<li>query the database to retrieve specific data or generate reports.</li>
-</ul>
-<p>It is widely used in the development of web-based applications, and it is supported by most RDBMSs, including MySQL, Oracle, and Microsoft SQL Server.</p>
-<h2 id="Types-of-Databases"><a href="#Types-of-Databases" class="headerlink" title="Types of Databases"></a>Types of Databases</h2><p>There are several different types of databases, including:</p>
-<p><strong>Relational databases</strong>: These databases store data in the form of tables, with rows representing records and columns representing fields. Relationships between data can be established using keys. </p>
-<p><strong>Object-oriented databases</strong>: These databases store data in the form of objects, which are self-contained units of data and functionality. Object-oriented databases are designed to support the storage and management of complex, interrelated data.  </p>
-<p><strong>NoSQL databases</strong>: These databases are designed to support the storage and management of large amounts of unstructured data. They do not use the traditional table-based structure of relational databases, and they often support horizontal scaling, which allows them to handle very large amounts of data and high levels of concurrency.</p>
-<h2 id="Database-Architecture"><a href="#Database-Architecture" class="headerlink" title="Database Architecture"></a>Database Architecture</h2><p>There are several different types of database architectures, including:<br>Centralized (集中式) database architecture <br>Distributed database architecture <br>Client-server database architecture <br>Cloud database architecture</p>
-<h2 id="Advantage-v-s-Disadvantage"><a href="#Advantage-v-s-Disadvantage" class="headerlink" title="Advantage v.s. Disadvantage"></a>Advantage v.s. Disadvantage</h2><h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p><a target="_blank" rel="noopener" href="https://www.simplilearn.com/tutorials/dbms-tutorial/what-is-a-database#:~:text=There%20are%20several%20advantages%20to,tracking%20changes%20to%20the%20data.">What is a Database? Everything You Need to Know</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/15/The-Web-in-Depth/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/19544795?s=400&u=9ee5080d4cb44baabaf5b4af09769c17e14b1fcc&v=4">
-      <meta itemprop="name" content="Le4f">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Le4f's Wiki">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/11/15/The-Web-in-Depth/" class="post-title-link" itemprop="url">The Web in Depth</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-11-15 14:42:13" itemprop="dateCreated datePublished" datetime="2024-11-15T14:42:13+08:00">2024-11-15</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Web/" itemprop="url" rel="index"><span itemprop="name">Web</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Web/Security/" itemprop="url" rel="index"><span itemprop="name">Security</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Web/Security/Hacker-101/" itemprop="url" rel="index"><span itemprop="name">Hacker 101</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="Content-List"><a href="#Content-List" class="headerlink" title="Content List"></a>Content List</h1><ul>
-<li>HTTP basics</li>
-<li>Cookie security</li>
-<li>HTML parsing</li>
-<li>MIME sniffing</li>
-<li>Encoding sniffing</li>
-<li>Same-Origin Policy</li>
-<li>CSRF (Cross-Site Request Forgery)</li>
-</ul>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/11/15/The-Web-in-Depth/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+  </nav>
 
 
 
@@ -461,14 +1054,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">12</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
   </nav>
