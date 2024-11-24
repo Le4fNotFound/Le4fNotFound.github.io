@@ -20,28 +20,32 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"right","Muse | Mist":220,"display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Le4f&#39;s Wiki">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="出于某些不可抗力，不得不踏上自学前端的路了（其实就是没找到一个趁手的前端用）搜索了一些资源，暂时发现LintCode比较符合我快速入门的需求，其他不会的就RTFM吧，’F’ means ‘Friendly’, I guess.  Start now ~   Part I - HTMLHTML Structure &lt;!DOCTYPE HTML&gt; 代表 HTML5 标准网页声明； HTML">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Web Dev 1: Start from HTML">
+<meta property="og:url" content="http://example.com/2024/11/23/Web-Dev-1-Start/index.html">
 <meta property="og:site_name" content="Le4f&#39;s Wiki">
+<meta property="og:description" content="出于某些不可抗力，不得不踏上自学前端的路了（其实就是没找到一个趁手的前端用）搜索了一些资源，暂时发现LintCode比较符合我快速入门的需求，其他不会的就RTFM吧，’F’ means ‘Friendly’, I guess.  Start now ~   Part I - HTMLHTML Structure &lt;!DOCTYPE HTML&gt; 代表 HTML5 标准网页声明； HTML">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-11-23T02:09:57.000Z">
+<meta property="article:modified_time" content="2024-11-24T08:11:00.216Z">
 <meta property="article:author" content="Le4f">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2024/11/23/Web-Dev-1-Start/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>Le4f's Wiki</title>
+  <title>Web Dev 1: Start from HTML | Le4f's Wiki</title>
   
 
 
@@ -154,9 +158,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
@@ -172,10 +177,9 @@
       <meta itemprop="name" content="Le4f's Wiki">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/11/23/Web-Dev-1-Start/" class="post-title-link" itemprop="url">Web Dev 1: Start from HTML</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Web Dev 1: Start from HTML
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -215,7 +219,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>出于某些不可抗力，不得不踏上自学前端的路了（其实就是没找到一个趁手的前端用）<br>搜索了一些资源，暂时发现LintCode比较符合我快速入门的需求，其他不会的就RTFM吧，’F’ means ‘Friendly’, I guess. </p>
+        <p>出于某些不可抗力，不得不踏上自学前端的路了（其实就是没找到一个趁手的前端用）<br>搜索了一些资源，暂时发现LintCode比较符合我快速入门的需求，其他不会的就RTFM吧，’F’ means ‘Friendly’, I guess. </p>
 <p>Start now ~</p>
 <!--Read More-->
 
@@ -443,774 +447,31 @@
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">article</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>文章目录<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>文章内容<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span> <br>    <span class="hljs-tag">&lt;<span class="hljs-name">footer</span>&gt;</span> 文章信息 <span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span> <br><span class="hljs-tag">&lt;<span class="hljs-name">footer</span>&gt;</span> 页面底部 <span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span><br></code></pre></td></tr></table></figure>
 <hr>
 <h2 id="Table-list-label"><a href="#Table-list-label" class="headerlink" title="Table list label"></a>Table list label</h2>
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/19/OS-Virtual-Memory/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/19544795?s=400&u=9ee5080d4cb44baabaf5b4af09769c17e14b1fcc&v=4">
-      <meta itemprop="name" content="Le4f">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Le4f's Wiki">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/11/19/OS-Virtual-Memory/" class="post-title-link" itemprop="url">OS: Virtual Memory</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-11-19 22:33:38" itemprop="dateCreated datePublished" datetime="2024-11-19T22:33:38+08:00">2024-11-19</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/OS/" itemprop="url" rel="index"><span itemprop="name">OS</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/OS/CS-Basic/" itemprop="url" rel="index"><span itemprop="name">CS Basic</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/OS/CS-Basic/THU/" itemprop="url" rel="index"><span itemprop="name">THU</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>OS复习过程中，关于虚拟存储部分的简单笔记，描述未必准确，只是帮助自己理解。</p>
-<h3 id="覆盖和交换"><a href="#覆盖和交换" class="headerlink" title="覆盖和交换"></a>覆盖和交换</h3><h4 id="覆盖"><a href="#覆盖" class="headerlink" title="覆盖"></a>覆盖</h4><p>将程序分成若干个功能相对独立的模块，将没有调用关系的模块分成一组放入同一个共享内存区域。</p>
-<ol>
-<li>必要部分：主要功能常驻内存</li>
-<li>可选部分：不常用功能，需要时装入内存</li>
-<li>没有调用关系的模块必要时可以相互覆盖</li>
-<li>缺点：<ul>
-<li>增加运行时间</li>
-<li>增加编程难度</li>
-</ul>
-</li>
-</ol>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/11/19/OS-Virtual-Memory/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/19/OS-Page-Replacement-Algorithm/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/19544795?s=400&u=9ee5080d4cb44baabaf5b4af09769c17e14b1fcc&v=4">
-      <meta itemprop="name" content="Le4f">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Le4f's Wiki">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/11/19/OS-Page-Replacement-Algorithm/" class="post-title-link" itemprop="url">OS: Page Replacement Algorithm</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-11-19 22:31:58" itemprop="dateCreated datePublished" datetime="2024-11-19T22:31:58+08:00">2024-11-19</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/OS/" itemprop="url" rel="index"><span itemprop="name">OS</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/OS/CS-Basic/" itemprop="url" rel="index"><span itemprop="name">CS Basic</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/OS/CS-Basic/THU/" itemprop="url" rel="index"><span itemprop="name">THU</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>OS页面置换算法简记，不系统</p>
-<h3 id="置换算法的概念"><a href="#置换算法的概念" class="headerlink" title="置换算法的概念"></a>置换算法的概念</h3><ul>
-<li>功能：选择被置换的物理页面</li>
-<li>目标：尽可能减少调入调出次数</li>
-<li><code>页面锁定</code>：某些页面不可被换出（OS相关、要求响应速度等）<ul>
-<li>依靠页表中锁定标志位解决</li>
-</ul>
-</li>
-</ul>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/11/19/OS-Page-Replacement-Algorithm/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2024/11/19/OS-Virtual-Memory/" rel="prev" title="OS: Virtual Memory">
+      <i class="fa fa-chevron-left"></i> OS: Virtual Memory
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
   
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/19/OS-I-O-System/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/19544795?s=400&u=9ee5080d4cb44baabaf5b4af09769c17e14b1fcc&v=4">
-      <meta itemprop="name" content="Le4f">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Le4f's Wiki">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/11/19/OS-I-O-System/" class="post-title-link" itemprop="url">OS: I/O System</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-11-19 22:30:15" itemprop="dateCreated datePublished" datetime="2024-11-19T22:30:15+08:00">2024-11-19</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/OS/" itemprop="url" rel="index"><span itemprop="name">OS</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/OS/CS-Basic/" itemprop="url" rel="index"><span itemprop="name">CS Basic</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/OS/CS-Basic/THU/" itemprop="url" rel="index"><span itemprop="name">THU</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>这个系列的文章都是学习清华《操作系统》（向勇、陈渝老师）的时候自己做的课程笔记。<br>视频来源：学堂在线<br>本章笔记主要是I&#x2F;O系统相关知识，更为详细的内容推荐阅读课本</p>
-<h3 id="I-O特点"><a href="#I-O特点" class="headerlink" title="I&#x2F;O特点"></a>I&#x2F;O特点</h3><h4 id="设备接口类型及特征"><a href="#设备接口类型及特征" class="headerlink" title="设备接口类型及特征"></a>设备接口类型及特征</h4><ul>
-<li>字符设备 <ul>
-<li>存取速度慢，如：键盘鼠标串口</li>
-<li>特征：以字节为单位顺序访问</li>
-<li>I&#x2F;O命令：get(),put()</li>
-</ul>
-</li>
-</ul>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/11/19/OS-I-O-System/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/19/OS-File-System/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/19544795?s=400&u=9ee5080d4cb44baabaf5b4af09769c17e14b1fcc&v=4">
-      <meta itemprop="name" content="Le4f">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Le4f's Wiki">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/11/19/OS-File-System/" class="post-title-link" itemprop="url">OS: File System</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-11-19 22:27:40" itemprop="dateCreated datePublished" datetime="2024-11-19T22:27:40+08:00">2024-11-19</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/OS/" itemprop="url" rel="index"><span itemprop="name">OS</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/OS/CS-Basic/" itemprop="url" rel="index"><span itemprop="name">CS Basic</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/OS/CS-Basic/THU/" itemprop="url" rel="index"><span itemprop="name">THU</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>这个系列的文章都是学习清华《操作系统》（向勇、陈渝老师）的时候自己做的课程笔记。<br>视频来源：学堂在线<br>本章笔记主要是文章系统相关知识，这一章概念比较多一些，宜多看几遍尝试理解</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/11/19/OS-File-System/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/19/Compiler-AST/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/19544795?s=400&u=9ee5080d4cb44baabaf5b4af09769c17e14b1fcc&v=4">
-      <meta itemprop="name" content="Le4f">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Le4f's Wiki">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/11/19/Compiler-AST/" class="post-title-link" itemprop="url">Compiler: AST</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-11-19 22:25:25" itemprop="dateCreated datePublished" datetime="2024-11-19T22:25:25+08:00">2024-11-19</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Compiler/" itemprop="url" rel="index"><span itemprop="name">Compiler</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="From-concrete-to-abstract"><a href="#From-concrete-to-abstract" class="headerlink" title="From concrete to abstract"></a>From concrete to abstract</h3><p><code>抽象语法树（AST）本质是是精简的解析树。</code>解析树的核心是一个句子语法结构的图示。编译器设计中<em>“AST”</em>和<strong>语法树</strong>是可以等价的”</p>
-<blockquote>
-<p>语法解析树是一个句子的图解结构，任何一种语言都可以来实现这个句子，这意味着他可以遵循任何语法规则。</p>
-</blockquote>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/11/19/Compiler-AST/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/19/Compiler-Recursive-Descent-Parsing/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/19544795?s=400&u=9ee5080d4cb44baabaf5b4af09769c17e14b1fcc&v=4">
-      <meta itemprop="name" content="Le4f">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Le4f's Wiki">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/11/19/Compiler-Recursive-Descent-Parsing/" class="post-title-link" itemprop="url">Compiler: Recursive Descent Parsing</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-11-19 22:11:54" itemprop="dateCreated datePublished" datetime="2024-11-19T22:11:54+08:00">2024-11-19</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Compiler/" itemprop="url" rel="index"><span itemprop="name">Compiler</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="自顶向下的语法分析"><a href="#自顶向下的语法分析" class="headerlink" title="自顶向下的语法分析"></a>自顶向下的语法分析</h3><p>根据生成树的不同，语法分析分为自顶向下和自底向上两种方式。</p>
-<h4 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h4><p>自顶向下的语法分析：从文法开始符号出发，自上而下的为输入串建立一棵语法树，使语法树的末端结点与给定符号串相匹配。如果最终没有相匹配的语法树，则说明给顶符号串不符合语法规则。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/11/19/Compiler-Recursive-Descent-Parsing/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/19/Compiler-Lexical-Analysis/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/19544795?s=400&u=9ee5080d4cb44baabaf5b4af09769c17e14b1fcc&v=4">
-      <meta itemprop="name" content="Le4f">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Le4f's Wiki">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/11/19/Compiler-Lexical-Analysis/" class="post-title-link" itemprop="url">Compiler: Lexical Analysis</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-11-19 22:09:47" itemprop="dateCreated datePublished" datetime="2024-11-19T22:09:47+08:00">2024-11-19</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Compiler/" itemprop="url" rel="index"><span itemprop="name">Compiler</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>词法分析器 - 从输入串提取带个独立的基本语法符号（token）<br>主要提取的token有五种：</p>
-<ul>
-<li>关键词 - 保留字</li>
-<li>标识符 - 变量名、常量名、数组名、子过程名等</li>
-<li>常数</li>
-<li>运算符</li>
-<li>界符 - 逗号、分号、括号等</li>
-</ul>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/11/19/Compiler-Lexical-Analysis/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/19/Compiler-Base-of-Compiling/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/19544795?s=400&u=9ee5080d4cb44baabaf5b4af09769c17e14b1fcc&v=4">
-      <meta itemprop="name" content="Le4f">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Le4f's Wiki">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/11/19/Compiler-Base-of-Compiling/" class="post-title-link" itemprop="url">Compiler: Base of Compiling</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-11-19 22:08:49" itemprop="dateCreated datePublished" datetime="2024-11-19T22:08:49+08:00">2024-11-19</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Compiler/" itemprop="url" rel="index"><span itemprop="name">Compiler</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="文法与语言"><a href="#文法与语言" class="headerlink" title="文法与语言"></a>文法与语言</h3><p>语言是在基本符号集上按照一定规则构成的符号串的集合</p>
-<ul>
-<li>字母表：非空有穷集合</li>
-<li>符号串：字母表中符号构成的有穷序列</li>
-<li>符号串的长度：串中符号的个数</li>
-<li>空串</li>
-<li>连接：就是简单拼接</li>
-<li>方幂：符号串a自身连接n次得到的新符号串<br><code>非空串和空串的连接，就是非空串本身</code></li>
-<li>符号串集合的乘积</li>
-</ul>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/11/19/Compiler-Base-of-Compiling/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/19/Data-Link-Layer/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/19544795?s=400&u=9ee5080d4cb44baabaf5b4af09769c17e14b1fcc&v=4">
-      <meta itemprop="name" content="Le4f">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Le4f's Wiki">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/11/19/Data-Link-Layer/" class="post-title-link" itemprop="url">Data Link Layer</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-11-19 22:03:53" itemprop="dateCreated datePublished" datetime="2024-11-19T22:03:53+08:00">2024-11-19</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Network/" itemprop="url" rel="index"><span itemprop="name">Network</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Network/CS-Basic/" itemprop="url" rel="index"><span itemprop="name">CS Basic</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>介质访问控制相关，随手笔记，方便我自己找ovo，</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/11/19/Data-Link-Layer/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
-  </nav>
 
 
 
@@ -1262,6 +523,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Part-I-HTML"><span class="nav-number">1.</span> <span class="nav-text">Part I - HTML</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML-Structure"><span class="nav-number">1.1.</span> <span class="nav-text">HTML Structure</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E4%BA%9B%E7%BB%8F%E9%AA%8C"><span class="nav-number">1.1.1.</span> <span class="nav-text">一些经验</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#img"><span class="nav-number">1.2.</span> <span class="nav-text">img</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8D%A2%E8%A1%8C%E5%92%8C%E5%88%86%E9%9A%94"><span class="nav-number">1.3.</span> <span class="nav-text">换行和分隔</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#br"><span class="nav-number">1.3.1.</span> <span class="nav-text">br</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hr"><span class="nav-number">1.3.2.</span> <span class="nav-text">hr</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#div"><span class="nav-number">1.4.</span> <span class="nav-text">div</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#table"><span class="nav-number">1.5.</span> <span class="nav-text">table</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9A%84%E6%A0%B7%E5%BC%8F"><span class="nav-number">1.5.1.</span> <span class="nav-text">&lt;table&gt; 的样式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#list"><span class="nav-number">1.6.</span> <span class="nav-text">list</span></a></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">1.7.</span> <span class="nav-text">&lt;iframe&gt;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%93%E6%9E%84%E5%8C%96%E5%85%83%E7%B4%A0%E6%A0%87%E7%AD%BE"><span class="nav-number">1.8.</span> <span class="nav-text">结构化元素标签</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#header"><span class="nav-number">1.8.1.</span> <span class="nav-text">header</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#nav"><span class="nav-number">1.8.2.</span> <span class="nav-text">nav</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#article"><span class="nav-number">1.8.3.</span> <span class="nav-text">article</span></a></li><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">1.8.4.</span> <span class="nav-text">article元素使用方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#aside"><span class="nav-number">1.8.5.</span> <span class="nav-text">aside</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#section"><span class="nav-number">1.8.6.</span> <span class="nav-text">section</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#footer"><span class="nav-number">1.8.7.</span> <span class="nav-text">footer</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Table-list-label"><span class="nav-number">1.9.</span> <span class="nav-text">Table list label</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
