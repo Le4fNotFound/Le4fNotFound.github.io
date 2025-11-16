@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 8.1.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/tree.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/tree.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/tree.png">
+  <link rel="mask-icon" href="/images/tree.png" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"right","Muse | Mist":220,"display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="Day1 - Someone’s coming to town!Security FrameworkSecurity frameworks are documented processes that define policies and procedures organisations should follow to establish and manage security controls">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Advent of Cyber 2022">
+<meta property="og:url" content="http://yoursite.com/2025/11/16/advent_Cyber_2022/index.html">
+<meta property="og:site_name" content="Le4f x Wiki">
+<meta property="og:description" content="Day1 - Someone’s coming to town!Security FrameworkSecurity frameworks are documented processes that define policies and procedures organisations should follow to establish and manage security controls">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://tryhackme-images.s3.amazonaws.com/user-uploads/5fc2847e1bbebc03aa89fbf2/room-content/1e0cdd3b3f3c33c18d67f25aad84e618.png">
+<meta property="article:published_time" content="2025-11-16T13:22:12.967Z">
+<meta property="article:modified_time" content="2025-11-16T13:22:13.007Z">
+<meta property="article:author" content="Le4f">
+<meta property="article:tag" content="THB">
+<meta property="article:tag" content="framework">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://tryhackme-images.s3.amazonaws.com/user-uploads/5fc2847e1bbebc03aa89fbf2/room-content/1e0cdd3b3f3c33c18d67f25aad84e618.png">
+
+<link rel="canonical" href="http://yoursite.com/2025/11/16/advent_Cyber_2022/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>Advent of Cyber 2022 | Le4f x Wiki</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Le4f x Wiki</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2025/11/16/advent_Cyber_2022/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/19544795?s=400&u=9ee5080d4cb44baabaf5b4af09769c17e14b1fcc&v=4">
+      <meta itemprop="name" content="Le4f">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Le4f x Wiki">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Advent of Cyber 2022
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2025-11-16 21:22:12" itemprop="dateCreated datePublished" datetime="2025-11-16T21:22:12+08:00">2025-11-16</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Security/" itemprop="url" rel="index"><span itemprop="name">Security</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="Day1-Someone’s-coming-to-town"><a href="#Day1-Someone’s-coming-to-town" class="headerlink" title="Day1 - Someone’s coming to town!"></a>Day1 - Someone’s coming to town!</h2><h3 id="Security-Framework"><a href="#Security-Framework" class="headerlink" title="Security Framework"></a>Security Framework</h3><p><strong>Security frameworks</strong> are documented processes that define policies and procedures organisations should follow to establish and manage security controls.</p>
+<h4 id="NIST-Cybersecurity-Framework"><a href="#NIST-Cybersecurity-Framework" class="headerlink" title="NIST Cybersecurity Framework"></a>NIST Cybersecurity Framework</h4><p>The Cybersecurity Framework (CSF) was developed by the National Institute of Standards and Technology (NIST), and it provides detailed guidance for organisations to manage and reduce cybersecurity risk. The framework focuses on five essential functions: <strong><code>Identify</code> -&gt; <code>Protect</code> -&gt; <code>Detect</code> -&gt; <code>Respond</code> -&gt; <code>Recover.</code></strong> With these functions, the framework allows organisations to prioritise their cybersecurity investments and engage in continuous improvement towards a target cybersecurity profile.</p>
+<h4 id="MITRE-ATT-CK-Framework"><a href="#MITRE-ATT-CK-Framework" class="headerlink" title="MITRE ATT&amp;CK Framework"></a>MITRE ATT&amp;CK Framework</h4><p>Identifying adversary plans of attack can be challenging to embark on blindly. They can be understood through the behaviours, methods, tools and strategies established for an attack, commonly known as <strong>Tactics, Techniques and Procedures (TTPs).</strong> The MITRE ATT&amp;CK framework is a knowledge base of TTPs, carefully curated and detailed to ensure security teams can identify attack patterns. The framework’s structure is similar to a periodic table, mapping techniques against phases of the attack chain and referencing system platforms exploited.</p>
+<h3 id="Cyber-Kill-Chain"><a href="#Cyber-Kill-Chain" class="headerlink" title="Cyber Kill Chain"></a>Cyber Kill Chain</h3><p><img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/5fc2847e1bbebc03aa89fbf2/room-content/1e0cdd3b3f3c33c18d67f25aad84e618.png" alt="该图展示了网络杀伤链的七个步骤。"> </p>
+<h3 id="Unified-Kill-Chain-UKC"><a href="#Unified-Kill-Chain-UKC" class="headerlink" title="Unified Kill Chain(UKC)"></a>Unified Kill Chain(UKC)</h3><h4 id="CYCLE-1-In"><a href="#CYCLE-1-In" class="headerlink" title="CYCLE 1: In"></a>CYCLE 1: In</h4><p>这一系列阶段的主要重点是让攻击者获得对系统或网络环境的访问权限。通常，网络攻击是由外部攻击者发起的。他们将遵循的关键步骤是： </p>
+<ol>
+<li>侦察（<strong>Reconnaissance</strong>）：攻击者利用公开信息对目标进行研究；</li>
+<li>武器化（<strong>Weaponisation</strong>）：建立所需的基础设施来承载指挥和控制中心（C2）对于实施攻击至关重要；</li>
+<li>分发（<strong>Delivery</strong>）：payload是通过多种方式传递给目标的恶意工具，例如电子邮件网络钓鱼和供应链攻击；</li>
+<li>社会工程学（<strong>Social Engineering</strong>）：攻击者会诱骗目标对他们刚刚传递的payload执行不受信任和不安全的操作，通常会使他们的信息看起来来自受信任的内部来源；</li>
+<li>利用（<strong>Exploitation</strong>）：如果攻击者在网络资产中发现现有的漏洞、软件或硬件弱点，他们可能会利用这一点来触发其payload；</li>
+<li>持久性（<strong>Persistence</strong>）：攻击者会在网络或资产上留下后备存在，以确保他们能够访问目标；</li>
+<li>防御逃避（<strong>Defence Evasion</strong>）：攻击者必须在整个攻击过程中保持匿名，通过禁用和避免任何启用的安全防御机制，包括删除其存在的证据；</li>
+<li>命令与控制（<strong>Command &amp; Control</strong>）：还记得攻击者准备的基础设施吗？受感染系统与攻击者基础设施之间的通信渠道通过互联网建立。</li>
+</ol>
+<h4 id="CYCLE-2-Through"><a href="#CYCLE-2-Through" class="headerlink" title="CYCLE 2: Through"></a>CYCLE 2: Through</h4><p>在此阶段，攻击者将有兴趣获得对网络内资产的更多访问权和特权。</p>
+<p>⚠注意：攻击者可能会重复此阶段，直到获得所需的访问权限。</p>
+<ol>
+<li>Pivoting（枢纽？）：<strong>还记得攻击者可能用来</strong>持久化的系统吗？该系统将成为网络中其他系统的攻击发射台。</li>
+<li>发现（<strong>Discovery</strong>）：攻击者将试图收集有关受感染系统的尽可能多的信息，例如可用用户和数据。或者，他们可能会远程发现网络内的漏洞和资产。这为下一阶段铺平了道路。</li>
+<li>权限提升（<strong>Privilege Escalation</strong>）：受限的访问会阻止攻击者执行其任务。因此，他们将利用已发现的漏洞或错误配置在受感染的系统上寻求更高的权限。</li>
+<li>执行（<strong>Execution</strong>）：利用提升的权限，可以下载并执行恶意代码来提取敏感信息或对系统造成进一步破坏。</li>
+<li><strong>凭证访问（Credential Access）</strong>：提取的敏感信息中的一部分包括存储在硬盘或内存中的登录凭证。这为攻击者的攻击提供了更强大的火力。</li>
+<li>横向移动（<strong>Lateral Movement</strong>）：使用提取的凭证，攻击者可以在网络内的不同系统或数据存储之间移动，例如在单个部门内。</li>
+</ol>
+<h4 id="CYCLE-3-Out"><a href="#CYCLE-3-Out" class="headerlink" title="CYCLE 3: Out"></a>CYCLE 3: Out</h4><p>在此阶段，资产或服务的机密性、完整性和可用性 ( CIA ) 会受到损害。金钱、名誉或破坏将驱使攻击者实施攻击，造成尽可能多的破坏，然后消失得无影无踪。</p>
+<ul>
+<li>Access</li>
+<li>Collection：在找到大量数据和信息后，攻击者将试图汇总所需的一切。这样做会彻底破坏资产的机密性，尤其是在处理需要保护的商业机密和财务或个人身份信息 ( PII ) 时。</li>
+<li>Exfiltration：攻击者必须将战利品带出网络。可以使用各种技术来确保他们达成目标而不引起怀疑。</li>
+<li>Impact：当资产或信息的可用性或完整性受到损害时，攻击者将使用获得的所有权限进行操纵、干扰和破坏。想象一下，组织将不得不从中恢复声誉、财务和社会损失。</li>
+<li>Objectives：攻击者可能还有其他目标，这些目标可能会影响其目标所在的社会或技术环境。定义和理解这些目标往往有助于安全团队熟悉对抗性攻击工具并进行风险评估以保护其资产。</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/THB/" rel="tag"># THB</a>
+              <a href="/tags/framework/" rel="tag"># framework</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2025/11/13/hello-world/" rel="prev" title="Hello World">
+      <i class="fa fa-chevron-left"></i> Hello World
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2025/11/16/daily_test_week1/" rel="next" title="每日一题笔记 - Week 1">
+      每日一题笔记 - Week 1 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Day1-Someone%E2%80%99s-coming-to-town"><span class="nav-number">1.</span> <span class="nav-text">Day1 - Someone’s coming to town!</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Security-Framework"><span class="nav-number">1.1.</span> <span class="nav-text">Security Framework</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#NIST-Cybersecurity-Framework"><span class="nav-number">1.1.1.</span> <span class="nav-text">NIST Cybersecurity Framework</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#MITRE-ATT-CK-Framework"><span class="nav-number">1.1.2.</span> <span class="nav-text">MITRE ATT&amp;CK Framework</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Cyber-Kill-Chain"><span class="nav-number">1.2.</span> <span class="nav-text">Cyber Kill Chain</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Unified-Kill-Chain-UKC"><span class="nav-number">1.3.</span> <span class="nav-text">Unified Kill Chain(UKC)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#CYCLE-1-In"><span class="nav-number">1.3.1.</span> <span class="nav-text">CYCLE 1: In</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#CYCLE-2-Through"><span class="nav-number">1.3.2.</span> <span class="nav-text">CYCLE 2: Through</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#CYCLE-3-Out"><span class="nav-number">1.3.3.</span> <span class="nav-text">CYCLE 3: Out</span></a></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Le4f"
+      src="https://avatars2.githubusercontent.com/u/19544795?s=400&u=9ee5080d4cb44baabaf5b4af09769c17e14b1fcc&v=4">
+  <p class="site-author-name" itemprop="name">Le4f</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">36</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">36</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Night1ng4le" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Night1ng4le" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:le4f.l@foxmail.com" title="E-Mail → mailto:le4f.l@foxmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2019 – 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Le4f</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
